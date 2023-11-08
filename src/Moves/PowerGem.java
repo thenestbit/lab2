@@ -11,6 +11,11 @@ public class PowerGem extends PhysicalMove{
     }
 
     @Override
+    protected void applyOppEffects(Pokemon p){
+        System.out.println("Меня тыкнули!");
+    }
+
+    @Override
     protected String describe() {
         return "применяет атаку PowerGem и наносит урон";
     }

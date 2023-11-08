@@ -11,6 +11,11 @@ public class Rest extends SpecialMove{
     }
 
     @Override
+    protected void applyOppEffects(Pokemon p){
+        System.out.println("Меня тыкнули!");
+    }
+
+    @Override
     protected String describe() {
         return "засыпает...";
     }

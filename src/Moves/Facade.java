@@ -17,6 +17,12 @@ public class Facade extends PhysicalMove{
     protected boolean checkAccuracy(Pokemon p1, Pokemon p2){
         return true;
     }
+
+    @Override
+    protected void applyOppEffects(Pokemon p){
+        System.out.println("Меня тыкнули!");
+    }
+
     @Override
     protected String describe(){
         if (flag) return "горит, отравлен или парализован! Покемон использует атаку Facade с удвоенным уроном";

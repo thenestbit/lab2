@@ -6,6 +6,10 @@ public class DoubleHit extends PhysicalMove{
         super(Type.NORMAL, 35, 90, 0,2);
     }
 
+    @Override
+    protected void applyOppEffects(Pokemon p){
+        System.out.println("Меня тыкнули!");
+    }
 
     @Override
     protected String describe() {
