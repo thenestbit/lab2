@@ -7,7 +7,7 @@ public class RockThrow extends PhysicalMove {
 
     @Override
     protected void applyOppEffects(Pokemon p){
-        System.out.println("Меня тыкнули!");
+        System.out.println(p.toString() + ": ай, меня тыкнули!");
     }
 
     @Override
